@@ -26,7 +26,7 @@ form.addEventListener('submit', e => {
   if (input.value === '') {
     iziToast.show({
       message: 'Input must not be empty. Please try again!',
-      iconUrl: './img/error-icon.png',
+      iconUrl: '/img/error-icon.png',
       messageColor: 'white',
       backgroundColor: '#EF4040',
       position: 'topRight',
@@ -52,7 +52,7 @@ form.addEventListener('submit', e => {
           iziToast.show({
             message:
               'Sorry, there are no images matching your search query. Please try again!',
-            iconUrl: './img/error-icon.png',
+            iconUrl: '/img/error-icon.png',
             messageColor: 'white',
             backgroundColor: '#EF4040',
             position: 'topRight',
