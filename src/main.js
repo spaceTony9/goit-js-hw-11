@@ -35,7 +35,7 @@ form.addEventListener('submit', e => {
     loader.classList.remove('hidden');
     searchParams.set('q', `${input.value}`);
 
-    fetch(`https://pixabay.com/api/?${searchParams}`, {
+    fetch(`https://pixabay.com/api?${searchParams}`, {
       headers: {
         Accept: 'application/json',
       },
