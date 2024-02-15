@@ -6,14 +6,19 @@
     <title>Document</title>
     
     <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-5b791d57.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-cf6910df.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-e07ec72f.css">
   </head>
   <body>
     <form class="form">
       <label>
-        <input class="" type="text" />
+        <input class="input" placeholder="Search images..." type="text" />
       </label>
-      <button type="submit"></button>
+      <button type="submit">Start</button>
     </form>
+    <span class="loader hidden"></span>
+    <ul class="gallery"></ul>
     
   </body>
 </html>
