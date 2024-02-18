@@ -67,9 +67,18 @@ form.addEventListener('submit', e => {
 });
 
 function htmlMarkupCreator(galleryItems) {
-  return galleryItems.map(item => {
-    const {largeImageURL, webformatURL, tags, likes,views, comments, downloads} = item;
-    return `<li>
+  return galleryItems
+    .map(item => {
+      const {
+        largeImageURL,
+        webformatURL,
+        tags,
+        likes,
+        views,
+        comments,
+        downloads,
+      } = item;
+      return `<li>
       <div class="gallery-photo">
         <a href="${largeImageURL}"
           ><img src="${webformatURL}" alt="${tags}"
@@ -94,7 +103,8 @@ function htmlMarkupCreator(galleryItems) {
         </div>
       </div>
     </li>`;
-  }).join("");
+    })
+    .join('');
 }
 
 function showErrorPopUp(message) {
